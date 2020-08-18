@@ -1,10 +1,19 @@
-from django.http import JsonResponse
-from django.shortcuts import render, get_object_or_404, redirect
-from django.contrib.auth.decorators import login_required
-from django.views.decorators.http import require_POST
-from django.urls import reverse
-import uuid
+from django.shortcuts import render
 
 
 def promo(request):
-    return render(request, 'templates/promo.html')
+    # noinspection PyUnresolvedReferences
+    return render(request, 'core_templates/promo.html')
+
+
+def services(request):
+    return render(request, 'core_templates/services.html')
+
+
+def gallery(request):
+    return render(request, 'core_templates/gallery.html')
+
+
+def reviews(request):
+    return render(request, 'core_templates/reviews.html')
+
