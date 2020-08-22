@@ -1,10 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+    <article class="uk-article uk-margin-left uk-margin-right uk-margin">
 
-</body>
-</html>
+    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Наши роботы</a></h1>
+
+    <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
+
+    <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+        <div>
+            <a class="uk-button uk-button-text" href="#">Read more</a>
+        </div>
+    </div>
+
+</article>
+
+<div class="uk-child-width-1-3@m uk-margin uk-margin-small-left uk-margin-small-right uk-thumbnav" uk-grid uk-lightbox="animation: slide">
+        <div>
+            <a class="uk-inline" href="{% static "images/photo.jpg" %}" data-caption="Caption 1">
+                <img src="{% static "images/photo.jpg" %}" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/light.jpg" %}" data-caption="Caption 2">
+                <img src="{% static "images/light.jpg" %}" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/dark.jpg" %}" data-caption="Caption 3">
+                <img src="{% static "images/dark.jpg" %}"  alt="">
+            </a>
+        </div>
+            <div>
+            <a class="uk-inline" href="{% static "images/photo.jpg" %}" data-caption="Caption 1">
+                <img src="{% static "images/photo.jpg" %}"  alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/dark.jpg" %}" data-caption="Caption 2">
+                <img src="{% static "images/dark.jpg" %}"  alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/photo.jpg" %}" data-caption="Caption 3">
+                <img src="{% static "images/photo.jpg" %}" alt="">
+            </a>
+        </div>
+     <div>
+            <a class="uk-inline" href="{% static "images/light.jpg" %}" data-caption="Caption 1">
+                <img src="{% static "images/light.jpg" %}"  alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/light.jpg" %}" data-caption="Caption 2">
+                <img src="{% static "images/light.jpg" %}"  alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/dark.jpg" %}" data-caption="Caption 3">
+                <img src="{% static "images/dark.jpg" %}" alt="">
+            </a>
+        </div>
+    <div>
+            <a class="uk-inline" href="{% static "images/photo.jpg" %}" data-caption="Caption 1">
+                <img src="{% static "images/photo.jpg" %}" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/light.jpg" %}" data-caption="Caption 2">
+                <img src="{% static "images/light.jpg" %}" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="{% static "images/dark.jpg" %}" data-caption="Caption 3">
+                <img src="{% static "images/dark.jpg" %}"  alt="">
+            </a>
+        </div
+
+</div>
+
+{% endblock %}
