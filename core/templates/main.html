@@ -11,15 +11,14 @@
 </head>
 <body>
 
-<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;  uk-light; top: 200">
+<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; uk-light; top: 200">
 <nav class="uk-navbar-container" uk-navbar="mode: click">
         <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo uk-margin-left" href="{% url "promo" %}">Logo</a>
+            <a class="uk-navbar-item uk-margin-left" uk-icon="icon:home; ratio:2" href="{% url "promo" %}"></a>
              <div uk-navbar>
-
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav uk-margin-left">
                         <li>
-                            <a href="#">Наши услуги</a>
+                            <a href="#" uk-scroll>Наши услуги</a>
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-active"><a href="{% url "garden-design" %}">Проектирование участка</a></li>
@@ -33,9 +32,8 @@
                         </li>
                         <li><a href="{% url "work_system" %}">Кам мы работаем</a></li>
                         <li><a href="{% url "gallery" %}">Галлерея</a></li>
-                        <li><a href="{% url "reviews" %}">Оставить отзыв</a></li>
+                        <li><a href="{% url "post_detail" %}">Оставить отзыв</a></li>
                     </ul>
-
                 </div>
         </div>
         <div class="uk-navbar-right">
